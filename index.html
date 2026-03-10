@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneNav - Offline Hiking & Trail Running Navigation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0D0D1A; color: #FFFFFF; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    
+    header {
+      background: linear-gradient(135deg, #0D0D1A 0%, #1A1A2E 100%);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #1A1A2E;
+    }
+    .logo { font-size: 48px; margin-bottom: 12px; }
+    header h1 { font-size: 42px; font-weight: 700; color: #4FC3F7; margin-bottom: 12px; }
+    header p { font-size: 18px; color: #888; max-width: 500px; margin: 0 auto 32px; }
+    
+    .btn-download {
+      display: inline-block;
+      background: #4FC3F7;
+      color: #0D0D1A;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 8px;
+      transition: background 0.2s;
+    }
+    .btn-download:hover { background: #81D4FA; }
+    .btn-secondary {
+      display: inline-block;
+      border: 2px solid #4FC3F7;
+      color: #4FC3F7;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      margin: 8px;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover { background: #4FC3F7; color: #0D0D1A; }
+
+    .screenshots {
+      padding: 60px 20px;
+      text-align: center;
+      background: #0D0D1A;
+    }
+    .screenshots h2 { font-size: 28px; color: #4FC3F7; margin-bottom: 12px; }
+    .screenshots p { color: #555; font-size: 15px; }
+
+    .features {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .features h2 { text-align: center; font-size: 28px; color: #4FC3F7; margin-bottom: 40px; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: #1A1A2E;
+      border-radius: 16px;
+      padding: 28px;
+      border: 1px solid #2A2A3E;
+    }
+    .feature-icon { font-size: 32px; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 17px; color: #4FC3F7; margin-bottom: 8px; }
+    .feature-card p { font-size: 14px; color: #888; line-height: 1.6; }
+
+    .install {
+      background: #1A1A2E;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .install h2 { font-size: 28px; color: #4FC3F7; margin-bottom: 32px; }
+    .steps {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .step {
+      background: #0D0D1A;
+      border-radius: 16px;
+      padding: 24px;
+      width: 220px;
+      border: 1px solid #2A2A3E;
+    }
+    .step-num {
+      width: 40px; height: 40px;
+      background: #4FC3F7;
+      color: #0D0D1A;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 12px;
+    }
+    .step p { font-size: 14px; color: #888; line-height: 1.5; }
+
+    .wristnav-banner {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .wristnav-banner h2 { font-size: 28px; color: #4FC3F7; margin-bottom: 12px; }
+    .wristnav-banner p { color: #888; font-size: 16px; margin-bottom: 28px; line-height: 1.7; }
+
+    footer {
+      background: #1A1A2E;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 13px;
+      border-top: 1px solid #2A2A3E;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🗺️</div>
+    <h1>PhoneNav</h1>
+    <p>Offline hiking and trail running navigation for Android. No internet required.</p>
+    <a class="btn-download" href="https://github.com/boothy91/phonenav-site/raw/main/PhoneNav.apk">⬇ Download APK</a>
+  </header>
+
+  <section class="screenshots">
+    <h2>Screenshots</h2>
+    <p>Coming soon</p>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Fully Offline Maps</h3>
+        <p>Download OpenStreetMap regions to your device. Navigate anywhere with no data connection needed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h3>GPX Route Navigation</h3>
+        <p>Import or plan GPX routes and follow them on the map with live position tracking.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Activity Recording</h3>
+        <p>Track distance, pace, heart rate, steps, elevation gain and loss during your activity.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗂️</div>
+        <h3>Route Planner</h3>
+        <p>Plan routes directly in the app and save them as GPX files ready to navigate.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Themes</h3>
+        <p>Light, Dark, and Fjord themes to suit any environment or preference.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⌚</div>
+        <h3>WristNav Companion</h3>
+        <p>Pair with WristNav on your Wear OS watch for wrist-based navigation on the trail.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="install">
+    <h2>How to Install</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <p>Download the APK from the button above</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <p>Enable <strong style="color:#fff">Install from unknown sources</strong> in Android Settings</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <p>Open the downloaded APK file and tap Install</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wristnav-banner">
+    <h2>⌚ Also need it on your watch?</h2>
+    <p>WristNav is a standalone Wear OS companion app with offline maps, GPX navigation, heart rate tracking and more — all from your wrist with no phone required.</p>
+    <a class="btn-secondary" href="https://boothy91.github.io/wrist-nav-site/" target="_blank">Visit WristNav →</a>
+  </section>
+
+  <footer>
+    <p>PhoneNav · Built for Android · <a href="https://github.com/boothy91/phonenav-site" style="color:#4FC3F7;">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
