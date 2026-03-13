@@ -2,6 +2,10 @@
 
 Offline hiking and trail running navigation for Android phones.
 
+## Site
+
+Full app guide and feature overview: [boothy91.github.io/phonenav-site](https://boothy91.github.io/phonenav-site/)
+
 ## Status
 
 **Currently in closed testing on the Play Store.**
